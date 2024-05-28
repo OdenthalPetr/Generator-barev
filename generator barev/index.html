@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervační systém restaurace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+    <h1  style ="color:rgb(0, 0, 0);background-color: gainsboro;">Přihlášení </h1>
+    <form id="loginForm">
+        <label for="username">Uživatelské jméno:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Heslo:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <p><a href="http://127.0.0.1:5500/index2.html" class="nav-link" href="#">přihlásit se</a></p>
+    </form>
+    
+    <p id="message"></p>
+    
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+    
+    
+            if (username === "" && password === "") {
+                document.getElementById("message").innerHTML = "Přihlášení úspěšné!";
+            } else {
+                document.getElementById("message").innerHTML = "Nesprávné uživatelské jméno nebo heslo!";
+            }
+        }
+    
+    </script>
+    
+
+
+
+    <style>
+        .form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ebe1e6;
+        border-radius: 5px;
+        background-color: rgb(203, 80, 203);
+    }
+    </style>
+   
+    
+</body>
+</html>

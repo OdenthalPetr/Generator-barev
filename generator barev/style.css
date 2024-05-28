@@ -1,0 +1,42 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    margin: 20px 0;
+}
+
+.color-display {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#favoriteColorsSection, #loginSection {
+    margin-top: 20px;
+}
+
+#favoriteColors {
+    list-style: none;
+    padding: 0;
+}
+
+#favoriteColors li {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
